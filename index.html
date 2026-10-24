@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Better Built Apps LLC</title>
+  <meta name="description" content="Better Built Apps LLC builds focused, carefully made mobile apps, including Lifting Lab for Olympic weightlifting.">
+  <link rel="canonical" href="https://betterbuiltapps.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Better Built Apps LLC">
+  <meta property="og:description" content="Focused, carefully made mobile apps.">
+  <meta property="og:url" content="https://betterbuiltapps.com/">
+  <meta property="og:image" content="https://betterbuiltapps.com/assets/og.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Better Built Apps LLC",
+    "url": "https://betterbuiltapps.com/",
+    "logo": "https://betterbuiltapps.com/assets/icon-512.png"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/mark.png" alt="" width="34" height="34"><span>Better Built Apps</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="#apps">Apps</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <img class="hero-logo" src="/assets/logo.png" alt="Better Built Apps" width="442" height="476">
+        <h1>Focused apps, built carefully.</h1>
+        <p>Better Built Apps LLC makes mobile software that does one thing well, for the people who actually use it.</p>
+      </div>
+    </section>
+
+    <section id="apps" class="section section--alt">
+      <div class="wrap">
+        <p class="eyebrow">Our apps</p>
+        <h2>Lifting Lab</h2>
+        <p class="section-intro">Our flagship app, available now on the App Store.</p>
+
+        <article class="product">
+          <img class="product-icon" src="/assets/lifting-lab-mark.svg" alt="Lifting Lab icon" width="112" height="112">
+          <div>
+            <h3>Lifting Lab: Weightlifting</h3>
+            <p class="platforms">iPhone</p>
+            <p class="desc">A training app built for Olympic weightlifting. It programs the training cycle, adapts each session to how you feel that day, analyzes bar path from ordinary phone video with no extra hardware, and plans meet day attempt by attempt.</p>
+            <div class="product-links">
+              <a class="btn" href="https://apps.apple.com/us/app/lifting-lab-weightlifting/id6804514003">View on the App Store</a>
+              <a class="btn btn--ghost" href="https://liftinglab.app/">Visit liftinglab.app</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Get in touch</h2>
+          <p class="section-intro">Questions about Better Built Apps or any of our apps, business inquiries, or support requests: send us a message and we'll reply by email.</p>
+        </div>
+
+        <!-- Posts to Web3Forms, which relays the submission as email to the
+             company inbox, so a static Pages site can take messages with no
+             backend. contact.js handles the submit. -->
+        <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Public by design: a Web3Forms access key is a client-side
+               identifier that routes to one inbox, not a secret. Rotate it in
+               the Web3Forms dashboard if it ever attracts spam. -->
+          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_KEY">
+          <input type="hidden" name="subject" value="Better Built Apps site: new message">
+          <input type="hidden" name="from_name" value="betterbuiltapps.com">
+          <!-- Web3Forms' honeypot. Hidden from people, tab order and autofill;
+               a bot that ticks it gets its submission dropped. -->
+          <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field field--wide">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send</button>
+            <!-- Rendered empty up front: a live region that appears together
+                 with its text is announced inconsistently. -->
+            <p class="form-status" role="status" aria-live="polite" data-state="idle"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Better Built Apps LLC</span>
+      <nav aria-label="Legal">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/contact.js" defer></script>
+</body>
+</html>
